@@ -1,4 +1,4 @@
-# cloudflare-ddns-v2
+# CloudFlare-DDNS-v2
 
 Improved version of Cloudflare DDNS. 
 
