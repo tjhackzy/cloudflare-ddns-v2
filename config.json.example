@@ -1,0 +1,27 @@
+{
+  "cloudflare": [
+    {
+      "authentication": {
+        "api_token": "",
+        "api_key": {
+          "api_key": "",
+          "account_email": ""
+        }
+      },
+      "zone_id": "",
+      "subdomains": [
+        "nextcloud",
+        "*.subdomain"
+      ],
+      "proxied": false,
+      "ttls": 60
+    }
+  ],
+  "interval": 1,
+  "a": true,
+  "aaaa": false,
+  "purgeUnknownRecords": false,
+  "Gotify_BaseURL": "https://gotify.myhomelab.tld",
+  "Gotify_AppToken": "aaaaaaaa-aaaaa",
+  "Gotify_Notification_Title": "Cloudflare-DDNS Update"
+}
