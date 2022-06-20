@@ -92,7 +92,7 @@ def commitRecord(ip):
     try:
         gotify_url = config["Gotify_BaseURL"]
         gotify_app_token = config["Gotify_AppToken"]
-        gotify_notification_subject = config["Gotify_Notification_Subject"]
+        gotify_notification_subject = config["Gotify_Notification_Title"]
         notification = True
         print("Gotify Settings found! URL:" + gotify_url + ", app-token:" + gotify_app_token)
     except:
