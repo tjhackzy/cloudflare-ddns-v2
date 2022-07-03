@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 
 
@@ -110,7 +111,7 @@ def commitRecord(ip):
             subdomain = subdomain.lower().strip()
             record = {
                 "type": ip["type"],
-                "name": subdomain,
+                "name": subdomain.replace("#","@"),
                 "content": ip["ip"],
                 "proxied": option["proxied"],
                 "ttl": option["ttls"]
@@ -126,7 +127,7 @@ def commitRecord(ip):
             duplicate_ids = []
             if dns_records is not None:
                 for r in dns_records["result"]:
-                    if (r["name"] == fqdn):
+                    if (r["name"] == fqdn.replace("#.","")):
                         if identifier:
                             if r["content"] == ip["ip"]:
                                 duplicate_ids.append(identifier)

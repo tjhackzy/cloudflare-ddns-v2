@@ -10,8 +10,9 @@
       },
       "zone_id": "",
       "subdomains": [
+	    "#",
         "nextcloud",
-        "*.subdomain"
+        "*.media"
       ],
       "proxied": false,
       "ttls": 60
