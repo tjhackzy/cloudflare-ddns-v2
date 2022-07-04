@@ -10,6 +10,11 @@ Also, now you can set the custom TTL within subdomains while updating the record
 
 Moreover, you can set the custom time interval within config file. Min is 1 (min).
 
+In case you want to update base domain, just put '#' in subdomains and it will update the
+'@' record (base domain record) within CloudFlare. 
+
+If 'proxy' is 'true', ttls value in json should be '1' (automatic).
+
 # Demo config.json file : 
 
 ```json
@@ -25,6 +30,7 @@ Moreover, you can set the custom time interval within config file. Min is 1 (min
       },
       "zone_id": "",
       "subdomains": [
+        "#",
         "nextcloud",
         "*.subdomain"
       ],
